@@ -457,7 +457,7 @@ component =
 
       renderIframe jsonStr =
         HH.iframe
-          [ sandbox "allow-scripts allow-top-navigation"
+          [ sandbox "allow-scripts allow-top-navigation-by-user-activation"
           , HP.src "frame-error.html"
           , srcDoc
               $ "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/lz-string/1.4.4/lz-string.min.js\"></script>"
